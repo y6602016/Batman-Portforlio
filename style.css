@@ -1,0 +1,436 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: antiquewhite;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    background-image:linear-gradient(45deg, #3c3a3a, #1d1a1a);
+    background-size: 100% 200%;
+    height: 100%;
+    width: 100%;
+}
+.smallList {
+    display: none;
+    position: fixed;
+    z-index: 250;
+    width: 130px;
+    height: 100%;
+    right: 0;
+    background-color: rgba(0,0,0,.8);
+}
+.smallList ul {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+
+.smallList ul li {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.smallList ul li a{
+    color: antiquewhite;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+header {
+    height: 500px;
+    background-image: url("https://i0.wp.com/www.zoom-comics.com/wp-content/uploads/sites/36/2017/04/Batman-over-gotham.jpg?fit=1200%2C675&ssl=1");
+    background-size: cover;
+    padding-top: 280px;
+    padding-left: 70px;
+}
+h1 {
+    font-size: 5rem;
+}
+header h2 {
+    font-size: 2rem;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 300;
+    display: flex;
+    justify-content: flex-end;
+}
+nav .large ul {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li {
+    height:100%;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: antiquewhite;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+nav .small {
+    display: none;
+    width: 10%;
+    position: relative;
+}
+
+.small img {
+    position: absolute;
+    width: 35px;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+    z-index: 305;
+}
+
+
+#about ,.portfolioContainer{
+    display: flex;
+    height: 450px;
+}
+.aboutLeft, .portfolio1 {
+    width: 50%;
+    position: relative;
+}
+img.logo {
+    position: absolute;
+    width: 50%;
+    z-index: 2;
+    top: 10%;
+    left: 5%;
+    transform: rotate(-35deg);
+}
+img.profile {
+    position: absolute;
+    width: 70%;
+    z-index: 1;
+    right: 5%;
+    top: 17%;
+    box-shadow: 2px 5px 15px ghostwhite;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.aboutRight, .portfolio2 {
+    width: 50%;
+    position: relative;
+}
+.aboutText {
+    width: 70%;
+    height: 50%;
+    margin: 15% auto;
+}
+.aboutRight h2 {
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+
+.aboutRight p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1;
+    margin-top: 5%;
+}
+
+.aboutRight p.skills {
+    margin-top: 15%;
+}
+
+.breaker {
+    height: 120px;
+    width: 100%;
+}
+
+#portfolio {
+    height: 650px;
+    width: 100%;
+}
+
+
+.portfolioTitle {
+    height: 130px;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolioTitle h2 {
+    font-size: 3rem;
+}
+
+.portfolio1 .textArea, .portfolio2 .textArea{
+    height: 35%;
+    width: 90%;
+    margin-left: 8%;
+    margin-top: 5%;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+}
+.portfolio1 .bar, .portfolio2 .bar {
+    width: 3px;
+    height: 100%;
+    background-color: antiquewhite;
+    margin: 0;
+}
+.portfolio1 .text, .portfolio2 .text {
+    height: 100%;
+    width: 80%;
+    margin-left: 20px;
+}
+.portfolio1 h4, .portfolio2 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.portfolio1 p, .portfolio2 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+}
+
+.portfolioContainer button {
+    width: 90px;
+    height: 45px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .1);
+    border: 1px solid #282626;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 1px 2px 3px #000000;
+    margin-top: 10px;
+}
+
+.portfolioContainer button:hover {
+    transform:scale(1.1,1.1);
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.window {
+    display: none;
+    background-color: rgba(24, 21, 21, 0.9);
+    border: 1px solid #6d6a67;
+    border-radius: 10px;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width:40%;
+    height:40%;
+    z-index: 200;
+    padding: 20px;
+    text-align: center;
+}
+
+.window h4 {
+    font-size: 2rem;
+}
+
+.window p {
+    font-size: .9rem;
+}
+
+.window a {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.window button {
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    background-color: rgba(140, 134, 134, 0.1);
+    border: 1px solid #777272;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 1px 2px 3px #000000;
+    margin-top: 15px;
+}
+
+#contacts {
+    text-align: center;
+    height: 150px;
+    margin-top: 50px;
+}
+#contacts h2 {
+    font-size: 3rem;
+}
+
+#contacts .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.tel, .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.tel p, .email p {
+    margin-left: 10px;
+}
+
+
+footer {
+    height: 150px;
+    background-image: url("images/footer.jpeg");
+    background-size: cover;
+    margin-top: 50px;
+    position: relative;
+}
+footer .info {
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col1, .col2, .col3 {
+    width: 20%;
+}
+.col1 li, .col2 li, .col3 li {
+    text-align: center;
+    list-style: none;
+    font-size: 1.3rem;
+    line-height: 2.5;
+}
+.col1 li a, .col2 li a, .col3 li a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    html, body {
+        height: 1500px;
+    }
+    nav .large{
+        display: none;
+    }
+    nav .small {
+        display: block;
+    }
+    header {
+        padding-top: 230px;
+    }
+
+    #about ,.portfolioContainer{
+        display: block;
+        height: 600px;
+    }
+    .aboutLeft{
+        height: 250px;
+        width: 100%;
+        position: relative;
+    }
+    img.logo {
+        top: 10%;
+        left: 0;
+        max-width: 600px;
+    }
+    img.profile {
+        left: 15%;
+        top: 20%;
+        max-width: 420px;
+    }
+
+    .aboutRight{
+        height: 250px;
+        width: 100%;
+        position: relative;
+    }
+    .aboutRight p {
+        line-height: 25px;
+    }
+
+    .aboutText {
+        margin: 20% auto;
+    }
+
+    #portfolio {
+        height: 1150px;
+        width: 100%;
+    }
+
+    .portfolio1 {
+        min-height: 570px;
+        width: 100%
+    }
+    #contacts {
+        margin: 0 auto;
+    }
+
+    .portfolio2 {
+        min-height: 570px;
+        width: 100%
+    }
+
+    .portfolio1 .textArea, .portfolio2 .textArea{
+        margin-left: 4%;
+        text-align: center;
+    }
+
+    .textArea .text {
+        margin: auto;
+    }
+    .window {
+        position: fixed;
+        top: 30%;
+        left: 10%;
+        width:80%;
+        height:40%;
+    }
+
+    #contacts .info {
+        display: block;
+        margin-top: 15px;
+    }
+    .tel, .email {
+        height: 50px;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    footer {
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    footer .info {
+        width:100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .col1, .col2, .col3 {
+        width: 30%;
+    }
+    .col1 li, .col2 li, .col3 li {
+        font-size: 1.3rem;
+        line-height: 2.5;
+    }
+}
+

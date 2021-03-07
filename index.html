@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Batman's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="smallList" id="smallList">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </section>
+    <header>
+        <nav>
+            <div class="large">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="small">
+                <div class="icon">
+                    <img src="images/icon.png" alt="Hamburger icon" id="hamburger">
+                </div>
+            </div>
+        </nav>
+        <div class="title">
+            <h1>Batman</h1>
+            <h2>A Full-Stack Developer in Gotham City</h2>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="aboutLeft">
+            <img src="images/batman_logo.png" alt="Batman_logo" class="logo">
+            <img src="images/batman.jpeg" alt="Batman" class="profile">
+        </div>
+        <div class="aboutRight">
+            <div class="aboutText">
+                <h2>About Me</h2>
+                <hr>
+                <p><i>"Tired to defend Gotham"</i></p>
+                <p>Switch my career path to be a full-stack developer!</p>
+                <p class="skills"><b>Skills:</b>  HTML,  CSS,  JavaScript,  React,  Node.js</p>
+            </div>
+        </div>
+    </section>
+    <section class="breaker"></section>
+    <section id="portfolio">
+        <div class="portfolioTitle">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="portfolioContainer">
+            <div class="portfolio1">
+                <div>
+                    <img src="images/VirtualPiano.gif" width="100%" alt="Virtual Piano">
+                </div>
+                <div class="textArea">
+                    <div class="bar"></div>
+                    <div class="text">
+                        <h4>Virtual Piano</h4>
+                        <p>I'd been dreaming as a pianist!</p>
+                        <p>Virtual Piano interacts with users via keyboard inputs and the corresponding piano audio!</p>
+                        <button class="open-window" id="openWin1">Source Code</button>
+                        <div class="window" id="popWindow1">
+                            <h4>Virtual Piano</h4>
+                            <p>Press your keyboard</p>
+                            <p>Key: A, S, D, F, G, H, J, W, E, T, Y, U</p>
+                            <P>Enjoy the melody!</P>
+                            <a href="https://github.com/y6602016/Flashcards" target="_blank">GitHub</a>
+                            <button class="close-window" id="closeWin1">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio2">
+                <div>
+                    <img src="images/FlashCards.gif" width="100%" alt="Flashcards">
+                </div>
+                <div class="textArea">
+                    <div class="bar"></div>
+                    <div class="text">
+                        <h4>FlashCards</h4>
+                        <p>I was too busy to travel around the world!</p>
+                        <p>FlashCards with flipping animation offers the amazing views of my favorite capitals all over the world!</p>
+                        <button class="open-window" id="openWin2">Source Code</button>
+                        <div class="window" id="popWindow2">
+                            <h4>FlashCards</h4>
+                            <p>Guess the capitals of the countries</p>
+                            <p>Move your mouse to the cards to see the wonderful cities</p>
+                            <P>Enjoy the trip!</P>
+                            <a href="https://github.com/y6602016/Flashcards" target="_blank">GitHub</a>
+                            <button class="close-window" id="closeWin2">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="breaker"></section>
+    <section id="contacts">
+        <h2>Contacts</h2>
+        <div class="info">
+            <div class="tel">
+                <img src="images/Batman-Small-Logo.png" width="35px" alt="SmallLogo">
+                <p>Tel: <a href="">657-34789</a></p>
+            </div>
+            <div class="email">
+                <img src="images/Batman-Small-Logo.png" width="35px" alt="SmallLogo">
+                <p>Email: <a href="">BatMan@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="info">
+            <div class="col1">
+                <ul>
+                    <li><a href="#">Enemy List</a></li>
+                    <li><a href="#">Battle History</a></li>
+                </ul>
+            </div>
+
+            <div class="col2">
+                <ul>
+                    <li><a href="#">Favorite Food</a></li>
+                    <li><a href="#">Favorite Book</a></li>
+                </ul>
+            </div>
+
+            <div class="col3">
+                <ul>
+                    <li><a href="#">Gotham City Tour</a></li>
+                    <li><a href="#">Gotham Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
